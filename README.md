@@ -82,8 +82,6 @@ exports/markdown/YYYY/YYYY-MM.md
 - `exports/markdown/` 保存手动导出的 Markdown 文件，按年份分目录。
 - Markdown 只是导出结果，不会自动同步回数据库。
 
-仓库中的 `.gitignore` 默认排除了 `data/`、`exports/`、`node_modules/` 和日志文件，避免把个人数据提交到 GitHub。
-
 ## 项目结构
 
 ```text
