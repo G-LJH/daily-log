@@ -1,0 +1,6 @@
+node_modules/
+data/
+exports/
+daily-log.log
+daily-log.pid
+.DS_Store
