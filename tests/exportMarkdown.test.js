@@ -15,7 +15,7 @@ const {
 
 test("builds markdown path from date", () => {
   const filePath = markdownPathForDate("/tmp/markdown", "2026-07-05");
-  assert.equal(filePath, path.join("/tmp/markdown", "2026", "07", "2026-07-05.md"));
+  assert.equal(filePath, path.join("/tmp/markdown", "2026", "2026-07-05.md"));
 });
 
 test("builds markdown path from month", () => {
@@ -110,7 +110,7 @@ test("exports one date markdown file", () => {
     ]
   });
 
-  assert.equal(filePath, path.join(dir, "2026", "07", "2026-07-05.md"));
+  assert.equal(filePath, path.join(dir, "2026", "2026-07-05.md"));
   assert.match(fs.readFileSync(filePath, "utf8"), /## 13:20\n\nnote/);
 });
 

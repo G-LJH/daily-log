@@ -18,8 +18,8 @@ function assertMonth(month) {
 
 function markdownPathForDate(baseMarkdownDir, date) {
   assertDate(date);
-  const [year, month] = date.split("-");
-  return path.join(baseMarkdownDir, year, month, `${date}.md`);
+  const [year] = date.split("-");
+  return path.join(baseMarkdownDir, year, `${date}.md`);
 }
 
 function markdownPathForMonth(baseMarkdownDir, month) {

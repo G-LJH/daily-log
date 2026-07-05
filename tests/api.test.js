@@ -209,7 +209,7 @@ test("creates entries with pasted images and exports image links", async () => {
       body: JSON.stringify({ date: "2026-07-05" })
     });
     const markdown = fs.readFileSync(exported.body.file, "utf8");
-    assert.match(markdown, /!\[clipboard\.png\]\(\.\.\/\.\.\/\.\.\/uploads\/2026\/07\//);
+    assert.match(markdown, /!\[clipboard\.png\]\(\.\.\/\.\.\/uploads\/2026\/07\//);
   } finally {
     server.close();
     app.locals.store.close();

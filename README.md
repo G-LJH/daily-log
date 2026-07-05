@@ -71,14 +71,15 @@ Daily Log 默认只在本地运行，不会主动上传你的记录。
 ```text
 data/daily-log.db
 data/uploads/YYYY/MM/
-exports/markdown/
+exports/markdown/YYYY/YYYY-MM-DD.md
+exports/markdown/YYYY/YYYY-MM.md
 ```
 
 说明：
 
 - `data/daily-log.db` 是 SQLite 数据库，也是主数据源。
 - `data/uploads/` 保存粘贴的图片文件。
-- `exports/markdown/` 保存手动导出的 Markdown 文件。
+- `exports/markdown/` 保存手动导出的 Markdown 文件，按年份分目录。
 - Markdown 只是导出结果，不会自动同步回数据库。
 
 仓库中的 `.gitignore` 默认排除了 `data/`、`exports/`、`node_modules/` 和日志文件，避免把个人数据提交到 GitHub。
